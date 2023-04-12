@@ -1,0 +1,36 @@
+.feature-title{
+    padding: 162px 20px 61px;
+    text-align: center;
+    @media only screen and (max-width: 1366px) {
+        padding: 75px 20px 61px;
+    }
+    h2{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 180%;
+        color: #121213;
+        margin-bottom: 60px;
+        span{
+            color: #F48C06;
+        }
+        @media only screen and (max-width: 992px) {
+            font-size: 40px;
+        }
+    }
+    p{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 17px;
+        letter-spacing: 0.184221px;
+        text-transform: capitalize;
+        color: #030303;
+        @media only screen and (max-width: 992px) {
+            font-size:14px;
+        }
+    }
+
+}

@@ -1,0 +1,164 @@
+.product-card-row {
+    margin: 66px 0;
+    background: #FFFFFF;
+    border: 0.5px solid #504E4E;
+    border-radius: 25px;
+
+    .tab-container {
+        padding: 36px;
+        border-radius: 4px;
+    }
+
+    .tab-menu {
+        @media only screen and (max-width: 768px) {
+            overflow-x: auto;
+        }
+
+        ul {
+            @media only screen and (max-width: 768px) {
+                width: 680px;
+            }
+
+            margin: 0;
+            padding: 0 10px 16px;
+            display: flex;
+            justify-content: space-between;
+
+
+            li {
+                list-style-type: none;
+                display: inline-block;
+                text-align: center;
+                width: 15%;
+
+                &:first-child {
+                    opacity: 1;
+
+                    @media only screen and (max-width: 768px) {
+                        display: none;
+                    }
+
+                    span {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+
+                span {
+                    font-family: 'Gill Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: #151414;
+                    position: relative;
+                    cursor: pointer;
+
+                    &::before {
+                        content: '';
+                        width: 40px;
+                        height: 3px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translate(-50%, 6px);
+                        background: #F5BC39;
+                        opacity: 0;
+                    }
+                }
+
+                span.active-a {
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab {
+        height: 0;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: calc(100% + 70px);
+        margin: 0 -35px;
+
+        .slick-list {
+            width: calc(100% - 68px);
+        }
+
+        .slick-disabled {
+            visibility: hidden;
+        }
+
+        .slick-dots {
+            width: 100%;
+        }
+
+        .ss-arow {
+            cursor: pointer;
+        }
+
+        .slick-slide {
+            padding: 0 12px;
+        }
+
+        .slick-arrow {
+            transform: translateY(-29px);
+        }
+
+        .pc-card {
+            .card-img {
+                max-width: 184px;
+                max-height: 185px;
+                background: #FFFFFF;
+                border: 1px solid #EDEBE7;
+                border-radius: 15px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .detail {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 24px;
+                gap: 10px;
+
+                .viewall,
+                span {
+                    font-family: 'Open Sans';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: #000000;
+
+                    @media only screen and (max-width: 640px) {
+                        font-size: 13px;
+                    }
+                }
+
+                a {
+                    padding: 2px 15px;
+                    height: auto;
+                    border-radius: 5px;
+                    @media only screen and (max-width: 640px) {
+                        padding: 1px 11px;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-active {
+        height: auto;
+
+    }
+
+}

@@ -1,0 +1,64 @@
+.create-acc {
+    .container {
+        .inner {
+            max-width: 410px;
+            padding: 47px 20px 27px !important;
+
+            form {
+                input,
+                button {
+                    max-width: 207px;
+                    width: 100%;
+                    margin: 0 auto 12px;
+                }
+                input[type=submit] {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .title-row {
+
+                h2 {
+                    font-size: 20px;
+                    line-height: 25px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 1;
+                    color: #475467;
+                    margin-bottom: 36px;
+                }
+            }
+            .or-text {
+                margin-bottom: 12px;
+                display: inline-block;
+            }
+            .form-btn {
+                line-height: 25px;
+                color: rgba(155, 149, 149, 0.25);
+            }
+            p {
+                color: rgba(155, 149, 149, 0.25);
+            }
+
+
+            .thumbs-up {
+                text-align: center;
+                padding-bottom: 70px;
+                p {
+                    color: #475467;
+                    font-size: 14px;
+                    line-height: 35px;
+                    margin-top: 10px;
+                    margin-bottom: 30px;
+                }
+                input {
+                    max-width: 207px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,164 @@
+.shop-feature-cards {
+    padding: 4.95vw 30px;
+
+    .sfc-container {
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+
+        .sfc-card {
+            background: #FFFFFF;
+
+            align-items: flex-start;
+            margin-bottom: 125px;
+
+            .sfc-number {
+
+                width: 52px;
+                height: 48px;
+                background: url(../images/sfc-number-bg.png) no-repeat;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 90%;
+                text-align: center;
+                color: #121212;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: -52px;
+                transform: translate(50%, -23%);
+            }
+
+            .sfc-img {
+                border: 0.5px solid #EEEAEA;
+                border-right: none;
+                width: 40%;
+                flex: 0 0 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 303px;
+            }
+
+            .sfc-details {
+                border: 0.5px solid rgba(223, 223, 227, 0.23);
+                width: 60%;
+                flex: 0 0 60%;
+                background: rgba(223, 223, 227, 0.23);
+                min-height: 303px;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 30px 39px;
+
+                h3 {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 1.6;
+                    margin-bottom: 20px;
+                    letter-spacing: 0.184221px;
+                    text-transform: capitalize;
+                    color: #353030;
+                }
+
+                p {
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 1.6;
+                    letter-spacing: 0.184221px;
+                    text-transform: capitalize;
+                    color: #353030;
+                }
+            }
+        }
+
+        .search-bar {
+
+            input[type=search] {
+                background: #FEFEFE;
+                border: 0.5px solid #D0CBCB;
+                font-family: 'Hind';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 17px;
+                line-height: 1.6;
+                letter-spacing: 0.184221px;
+                text-transform: capitalize;
+                color: #655F5F;
+                padding: 8px 20px 8px 33px;
+                margin-right: 22px;
+            }
+
+            input[type=submit] {
+                background: #FFBE2E;
+                border: 1px solid #D0CBCB;
+                border-radius: 10px;
+                font-family: 'Hind';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 17px;
+                line-height: 1.2;
+                letter-spacing: 0.184221px;
+                text-transform: capitalize;
+                color: #131212;
+                padding: 12px 33px 12px 22px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .shop-feature-cards {
+        .sfc-container {
+            .sfc-card {
+                .sfc-img {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .shop-feature-cards {
+        .sfc-container {
+            .sfc-card {
+                flex-direction: column;
+
+                .sfc-number {
+                    margin-top: 30px;
+                    margin-left: 0;
+                    transform: translate(53%, 51%);
+                }
+
+                .sfc-details,
+                .sfc-img {
+                    border: 0.5px solid #EEEAEA;
+                    border-right: 0.5px solid #EEEAEA;
+                    width: 100%;
+                    padding: 30px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+        .search-bar {
+            input[type=search] {
+                font-size: 15px;
+                width: 100%;
+                margin-right: 13px;
+            }
+        }
+    }
+}

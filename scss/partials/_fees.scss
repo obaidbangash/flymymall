@@ -1,0 +1,61 @@
+.fees {
+    padding: 9vw 0 50px;
+    text-align: center;
+    @media (max-width:1200px) {
+        padding: 100px 0 50px;
+    }
+    @media (max-width:991px) {
+        padding: 50px 0;
+    }
+
+    .container {
+        max-width: 700px;
+        width: 90%;
+        margin: 0 auto;
+        h2 {
+            font-family: 'Open Sans';
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 55px;
+            letter-spacing: 0.18px;
+            text-transform: capitalize;
+            color: #000000;
+            margin-bottom: 30px;
+            @media (max-width:991px) {
+                font-size: 30px;
+                line-height: 40px;
+                margin-bottom: 20px;
+            }
+            @media (max-width:767px) {
+                font-size: 24px;
+                line-height: 35px;
+            }
+        }
+        p {
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 35px;
+            letter-spacing: 0.18px;
+            text-transform: capitalize;
+            color: #000000;
+            @media (max-width:991px) {
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+
+.shop-fees{
+    padding:4.95vw 15px 50px;
+    .container{
+        max-width: 900px;
+        p{
+            text-align: left;
+            max-width: 360px;
+            margin: 0 auto;
+        }
+    }
+}

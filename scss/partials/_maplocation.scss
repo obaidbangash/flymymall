@@ -1,0 +1,191 @@
+.map-m {
+	display: none;
+}
+
+.map-wrapper {
+	padding: 122px 0 0;
+}
+
+.map-inner {
+	max-width: 1078px;
+	margin: 0 auto;
+}
+
+.item1 {
+	max-width: 61%;
+
+	.img {
+		width: 81%;
+		margin: 0 auto;
+
+		img {
+			margin-left: -27px;
+			width: 100%;
+		}
+	}
+}
+
+.item2 {
+	width: 48%;
+	margin-right: 0;
+	margin-left: auto;
+	margin-top: -69px;
+
+	.location-detail {
+		text-align: right;
+		margin-right: 63px;
+	}
+}
+
+.location-detail {
+	span {
+		&:nth-child(2n) {
+			transform: translate(17px, -51px);
+		}
+
+		font-family: $font-family_1;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 26px;
+		letter-spacing: 0.184221px;
+		text-transform: capitalize;
+		color: $off_black;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.map-inner {
+		max-width: 818px;
+	}
+
+	.location-detail {
+		span {
+			max-width: 120px;
+			text-align: center;
+			line-height: 16px;
+		}
+	}
+
+	.item1 {
+		.img {
+			width: 82%;
+
+			img {
+				margin-left: 3px;
+			}
+		}
+	}
+
+	.item2 {
+		.location-detail {
+			text-align: right;
+			margin-right: 30px;
+			max-width: 130px;
+			text-align: center;
+			margin-left: auto;
+		}
+
+		.img {
+			width: 290px;
+			margin-left: 28px;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.map-inner {
+		max-width: 670px;
+	}
+
+	.item1 .img {
+		width: 82%;
+		margin-bottom: 11px;
+	}
+
+	.location-detail span {
+		font-size: 14px;
+	}
+
+	.item2 .img {
+		width: 230px;
+		margin-left: 16px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.map-d {
+		display: none;
+	}
+
+	.map-m {
+		display: block;
+	}
+
+	.map-wrapper {
+		padding: 62px 0 0;
+
+		.map-inner {
+			max-width: 670px;
+
+			.item1 {
+				display: flex;
+				max-width: 240px;
+				margin: 0 auto;
+				width: 100%;
+
+				.location-detail {
+					height: 350px;
+					flex-direction: column;
+
+
+					span {
+						font-size: 16px;
+						max-width: 131px;
+
+						&:nth-child(2n) {
+							-webkit-transform: translate(-49px, 13px);
+							transform: translate(-49px, 13px);
+
+						}
+					}
+				}
+
+				.img {
+
+					width: 90px;
+					margin-bottom: 11px;
+				}
+			}
+
+			.item2 {
+				max-width: 240px;
+				margin: 0 auto;
+				width: 100%;
+
+				.location-detail {
+					max-width: 130px;
+					text-align: center;
+					margin-left: 40px;
+
+					span {
+						font-size: 14px;
+					}
+				}
+
+				.img {
+					margin-top: -16px;
+					width: 90px;
+					margin-left: 40px;
+
+					img {
+						width: 70px;
+					}
+				}
+			}
+		}
+	}
+}

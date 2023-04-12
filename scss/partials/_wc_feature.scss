@@ -1,0 +1,118 @@
+.wc-feature-wrapper {
+    max-width: 1540px;
+    margin: 0 auto;
+    padding: 50px 20px 90px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        width: 90%;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 1200px) {
+            flex-direction: column;
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        padding: 75px 20px 61px;
+
+    }
+
+    .yc-left {
+        width: 40%;
+
+        @media only screen and (max-width: 1200px) {
+            width: 100%;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 1.5;
+            color: #000000;
+            margin-bottom: 10px;
+            max-width: 380px;
+
+            span {
+                color: #F48C06;
+            }
+
+            @media only screen and (max-width:1200px) {
+                font-size: 31px;
+
+                @media only screen and (max-width: 992px) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        p {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 180%;
+            letter-spacing: 0.02em;
+            color: #696984;
+
+            @media only screen and (max-width: 1200px) {
+                font-size: 16px;
+
+                @media only screen and (max-width: 992px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .yc-right {
+        width: 40%;
+
+        @media only screen and (max-width: 768px) {
+            margin-top: 34px;
+            width: 90%;
+        }
+    }
+
+    .g-img {
+        margin-bottom: -34px;
+
+        @media only screen and (max-width: 768px) {
+            margin-top: 34px;
+            width: 90%;
+        }
+    }
+}
+
+.yc-color {
+    background: #F5BC39;
+}
+.yc-color.yd {
+    background: #F5BC39;
+
+    .yc-left h3 {
+        color: #000000;
+
+        span {
+            color: #F48C06;
+        }
+    }
+}
+.yc-color.yg ,
+.yg {
+    background: transparent;
+
+    .yc-left h3 {
+        color: #000000;
+
+        span {
+            color: #F48C06;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.banner {
+    background: #2E2B2B;
+    padding: 150px 0 128px;
+    position: relative;
+    overflow: hidden;
+    
+    .container {
+        max-width: 1400px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    h1 {
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 55px;
+        letter-spacing: 0.18px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .thumbnail1 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: 0;
+        @media (max-width:991px) {
+            left: -50px;
+            bottom: -20px;
+        }
+    }
+    .thumbnail2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 0;
+        height: 100%;
+        @media (max-width:991px) {
+            right: -200px;
+        }
+    }
+}

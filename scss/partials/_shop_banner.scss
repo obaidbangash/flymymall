@@ -1,0 +1,51 @@
+.shop-banner {
+    background-image: url(../images/shop-banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    padding: 6.5vw 30px;
+    @media (max-width:768px) {
+        padding: 16vh 30px;
+    }
+    .container {
+        max-width: 1400px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 55px;
+        letter-spacing: 0.18px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .thumbnail1 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: 0;
+
+        @media (max-width:991px) {
+            left: -50px;
+            bottom: -20px;
+        }
+    }
+
+    .thumbnail2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 0;
+        height: 100%;
+
+        @media (max-width:991px) {
+            right: -200px;
+        }
+    }
+}

@@ -1,0 +1,234 @@
+.pricing-detail {
+    background: rgba(223, 223, 227, 0.25);
+    padding: 85px 0 112px;
+    @media (max-width:1200px) {
+        padding: 80px 0;
+    }
+    @media (max-width:991px) {
+        padding: 50px 0;
+    }
+    .container {
+        max-width: 1306px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .detail-row {
+        background: #FFFFFF;
+        border: 1px solid rgba(148, 138, 138, 0.5);
+        border-radius: 10px;
+        padding: 18px 21px 50px;
+        h2 {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 36px;
+            text-align: center;
+            letter-spacing: 0.18px;
+            text-transform: capitalize;
+            color: #211D1D;
+            margin-bottom: 24px;
+        }
+        h5 {
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 55px;
+            letter-spacing: 0.18px;
+            text-transform: capitalize;
+            color: #040404;
+            border-bottom: 1px solid #D8CECE;
+            @media (max-width:991px) {
+                font-size: 16px;
+            }
+        }
+
+        p {
+            font-family: 'Neuton';
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 55px;
+            letter-spacing: 0.18px;
+            text-transform: capitalize;
+            color: #242423;
+            margin-bottom: 20px;
+            @media (max-width:991px) {
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+
+        .shipping-price {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 45px;
+
+            .flags-dropdown {
+                position: relative;
+                cursor: pointer;
+                // gap: 10px;
+                .flags-options {
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    z-index: 1;
+                    background-color: #fff;
+                    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.29);
+                    padding: 10px;
+                    margin-top: 10px;
+                }
+            }
+            .price {
+                font-family: 'Open Sans';
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 36px;
+                text-align: center;
+                letter-spacing: 0.18px;
+                text-transform: capitalize;
+                color: #000000;
+                @media (max-width:1200px) {
+                    font-size: 24px;
+                }
+                @media (max-width:991px) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .pricing-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-right: 66px;
+            @media (max-width:991px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 30px;
+            }
+            @media (max-width:640px) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            @media (max-width:480px) {
+                grid-template-columns: 1fr 1fr;
+            }
+            li {
+                max-width: 107px;
+                width: 100%;
+                button {
+                    background: #FFFFFF;
+                    border: 0.5px solid #C6C5BE;
+                    border-radius: 10px;
+                    height: 53px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                    width: 100%;
+                    font-family: 'Mitr';
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 55px;
+                    letter-spacing: 0.18px;
+                    text-transform: capitalize;
+                    color: #9E9A9A;
+                    cursor: pointer;
+                    @media (max-width:1200px) {
+                        max-width: 85px;
+                        font-size: 16px;
+                        margin: 0 auto;
+                    }
+                        
+                    &.black {
+                        color: #262525;
+                    }
+                    span {
+                        height: 28px;
+                    }
+                }
+                h6 {
+                    font-family: 'Mitr';
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: 0.18px;
+                    text-transform: capitalize;
+                    color: rgba(0, 0, 0, 0.54);
+                    text-align: center;
+                    margin-top: 10px;
+                    @media (max-width:1200px) {
+                        font-size: 10px;
+                    }
+                }
+                .radio-btns {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #FFFFFF;
+                    border: 0.5px solid #C6C5BE;
+                    border-radius: 10px;
+                    height: 53px;
+                    max-width: 107px;
+                    width: 100%;
+                    @media (max-width:1200px) {
+                        max-width: 85px;
+                        margin: 0 auto;
+                    }
+                    .radio {
+                        margin: 0 5px;
+                        input[type="radio"] {
+                        position: absolute;
+                        opacity: 0;
+                        + .radio-label {
+                            &:before {
+                            content: '';
+                            border-radius: 100%;
+                            border: 2px solid #000;
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            position: relative;
+                            top: -0.2em;
+                            margin-right: 1em; 
+                            vertical-align: top;
+                            cursor: pointer;
+                            text-align: center;
+                            transition: all 250ms ease;
+                            }
+                        }
+                        &:checked {
+                            + .radio-label {
+                            &:before {
+                                background-color: #000;
+                                box-shadow: inset 0 0 0 3px #fff;
+                            }
+                            }
+                        }
+                        &:focus {
+                            + .radio-label {
+                            &:before {
+                                outline: none;
+                            }
+                            }
+                        }
+                        &:disabled {
+                            + .radio-label {
+                            &:before {
+                                box-shadow: inset 0 0 0 4px #fff;
+                            }
+                            }
+                        }
+                        + .radio-label {
+                            &:empty {
+                            &:before {
+                                margin-right: 0;
+                            }
+                            }
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

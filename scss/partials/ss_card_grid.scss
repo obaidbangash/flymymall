@@ -1,0 +1,117 @@
+.store-card-gird {
+    padding: 105px 10px 0;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    @media only screen and (max-width: 1366px) {
+        grid-template-columns: auto auto;
+
+        @media only screen and (max-width: 768px) {
+            grid-template-columns: auto;
+        }
+    }
+
+    .scg-card {
+        margin-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        background: #FFFFFF;
+        border: 1px solid rgba(238, 237, 249, 0.42);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        padding: 45px 27px;
+
+        @media only screen and (max-width: 992px) {
+            padding: 45px 16px 16px;
+
+            @media only screen and (max-width: 768px) {
+                gap: 15px;
+            }
+        }
+
+        .brand-icon {
+            width: 68px;
+            height: 64px;
+            background: #FFFEFC;
+            border: 1px solid #EEEDF9;
+            border-radius: 50%;
+            margin: -75px auto 0;
+        }
+
+        .brand-banner {
+            background: rgba(255, 247, 236, 0.71);
+            border: 0.5px solid #E2D8D8;
+            border-radius: 10px;
+            font-size: 0;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .brand-gird {
+            @media only screen and (max-width: 768px) {
+                gap: 15px;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .pc-card {
+
+
+                .card-img {
+                    max-width: 184px;
+                    max-height: 185px;
+                    background: #FFFFFF;
+                    border: 1px solid #EDEBE7;
+                    border-radius: unset;
+                    font-size: 0;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .detail {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 24px;
+                    gap: 10px;
+
+                    .viewall,
+                    span {
+                        font-family: 'Open Sans';
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 32px;
+                        color: #000000;
+
+                        @media only screen and (max-width: 640px) {
+                            font-size: 13px;
+                        }
+                    }
+
+                    a {
+                        padding: 2px 15px;
+                        height: auto;
+                        border-radius: 5px;
+                        @media only screen and (max-width: 640px) {
+                            padding: 1px 11px;
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+
+            gap: 30px;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+    }
+}
