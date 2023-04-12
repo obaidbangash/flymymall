@@ -3266,7 +3266,7 @@ header .menu-btn.change .bar3 {
 }
 
 .ss-single-banner {
-  background: url(../../images/ss-single-banner-bg.png) no-repeat;
+  background: url(../images/ss-single-banner-bg.png) no-repeat;
   background-size: cover;
   background-position: right;
   padding: 222px 20px 61px;
@@ -3286,7 +3286,7 @@ header .menu-btn.change .bar3 {
   line-height: 41px;
   letter-spacing: 0.184221px;
   text-transform: capitalize;
-  color: #0D0D0C;
+  color: #0d0d0c;
   margin-bottom: 22px;
 }
 @media only screen and (max-width: 992px) {

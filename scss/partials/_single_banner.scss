@@ -1,39 +1,38 @@
 .ss-single-banner {
-    background: url(../../images/ss-single-banner-bg.png) no-repeat;
-    background-size: cover;
-    background-position: right;
-    padding: 222px 20px 61px;
-    text-align: center;
-    margin-top: -7px;
+  background: url(../images/ss-single-banner-bg.png) no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding: 222px 20px 61px;
+  text-align: center;
+  margin-top: -7px;
+  @media only screen and (max-width: 992px) {
+    padding: 75px 20px 61px;
+  }
+  h1 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 41px;
+    letter-spacing: 0.184221px;
+    text-transform: capitalize;
+    color: #0d0d0c;
+    margin-bottom: 22px;
     @media only screen and (max-width: 992px) {
-        padding: 75px 20px 61px;
+      font-size: 40px;
     }
-    h1{
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 41px;
-        letter-spacing: 0.184221px;
-        text-transform: capitalize;
-        color: #0D0D0C;
-        margin-bottom: 22px;
-        @media only screen and (max-width: 992px) {
-            font-size: 40px;
-        }
+  }
+  p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 17px;
+    letter-spacing: 0.184221px;
+    text-transform: capitalize;
+    color: #030303;
+    @media only screen and (max-width: 992px) {
+      font-size: 14px;
     }
-    p{
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 17px;
-        line-height: 17px;
-        letter-spacing: 0.184221px;
-        text-transform: capitalize;
-        color: #030303;
-        @media only screen and (max-width: 992px) {
-            font-size:14px;
-        }
-    }
-
+  }
 }
