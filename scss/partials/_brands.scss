@@ -1,99 +1,107 @@
 .brands {
-    padding: 60px 0;
-
-    .container {
-        max-width: 1092px;
-        width: 90%;
-        margin: 0 auto;
+  padding: 60px 0;
+  .container {
+    max-width: 1092px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  h2 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 0.184221px;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 33px;
+    @media (max-width: 1366px) {
+      font-size: 35px;
+      line-height: 45px;
     }
-
-    h2 {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 55px;
-        text-align: center;
-        letter-spacing: 0.184221px;
-        text-transform: capitalize;
-        color: #000000;
-        margin-bottom: 33px;
-
-        @media (max-width:1366px) {
-            font-size: 35px;
-        }
-
-        @media (max-width:991px) {
-            font-size: 30px;
-            margin-bottom: 30px;
-        }
+    @media (max-width: 991px) {
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 30px;
     }
-
-    ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 28px;
-        margin-bottom: 49px;
-        @media (max-width:991px) {
-            grid-template-columns: 1fr 1fr;
-        }
-        @media (max-width:767px) {
-            max-width: 350px;
-            margin: 0 auto 30px;
-            grid-template-columns: 1fr;
-        }
-        li {
-            background: linear-gradient(92.83deg, #FFFEFD 1.66%, rgba(255, 251, 251, 0) 100%);
-            border: 2px solid #FCFCFC;
-            box-shadow: 0px 0.5px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 10px;
-            padding: 15px 18px 14px;
-            display: flex;
-            align-items: center;
-            gap: 27px;
-            @media (max-width:1200px) {
-                gap: 15px;
-            }
-            figure {
-                border: 1px solid #F2F1EF;
-                border-radius: 50%;
-                width: 61px;
-                height: 55px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                @media (max-width:1200px) {
-                    width: 55px;
-                    height: 49px;
-                }
-            }
-            h5 {
-                font-family: 'Gill Sans';
-                font-weight: 400;
-                font-size: 25px;
-                line-height: 55px;
-                letter-spacing: 0.184221px;
-                text-transform: capitalize;
-                color: #343537;
-
-                @media (max-width:1200px) {
-                    font-size: 21px;
-                }
-                @media (max-width:991px) {
-                    font-size: 18px;
-                }
-            }
-        }
+  }
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 28px;
+    margin-bottom: 49px;
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr 1fr;
     }
-
-    .more-btn {
-        padding: 9px 29px;
-        height: 47px;
-        width: auto;
-        margin: 0 auto;
-        max-width: 106px;
+    @media (max-width: 767px) {
+      max-width: 350px;
+      margin: 0 auto 30px;
+      gap: 20px;
+    }
+    li {
+      background: linear-gradient(
+        92.83deg,
+        #fffefd 1.66%,
+        rgba(255, 251, 251, 0) 100%
+      );
+      border: 2px solid #fcfcfc;
+      box-shadow: 0px 0.5px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      padding: 15px 18px 14px;
+      display: flex;
+      align-items: center;
+      gap: 27px;
+      @media (max-width: 1200px) {
+        gap: 15px;
+      }
+      @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 10px 14px;
+      }
+      figure {
+        border: 1px solid #f2f1ef;
+        border-radius: 50%;
+        width: 61px;
+        height: 55px;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (max-width: 1200px) {
+          width: 55px;
+          height: 49px;
+        }
+      }
+      h5 {
+        font-family: "Gill Sans";
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 55px;
+        letter-spacing: 0.184221px;
+        text-transform: capitalize;
+        color: #343537;
+        @media (max-width: 1200px) {
+          font-size: 21px;
+        }
+        @media (max-width: 991px) {
+          font-size: 18px;
+        }
+        @media (max-width: 767px) {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
     }
+  }
+  .more-btn {
+    padding: 9px 29px;
+    height: 47px;
+    width: auto;
+    margin: 0 auto;
+    max-width: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

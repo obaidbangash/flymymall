@@ -90,6 +90,9 @@
 
   .banner-left {
     background: url(../images/store-banner-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     flex-direction: column;
     max-width: calc(100% - 390px);
     width: 100%;

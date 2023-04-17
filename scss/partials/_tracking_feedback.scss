@@ -1,47 +1,53 @@
 .tracking-feedback {
-    padding: 82px 0;
-
-    @media (max-width:1366px) {
-        padding: 50px 0;
+  padding: 82px 0;
+  @media (max-width: 1366px) {
+    padding: 50px 0;
+  }
+  .container {
+    background: url(../images/tracking-bg.png) no-repeat;
+    background-size: cover;
+    max-width: 1560px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 82px 15px;
+    @media (max-width: 1366px) {
+      padding: 50px 15px;
     }
-
-    .container {
-        background: url(../images/tracking-bg.png) no-repeat;
-        background-size: cover;
-        max-width: 1560px;
-        width: 90%;
+    ul {
+      gap: 30px;
+      flex-wrap: wrap;
+      @media (max-width: 767px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 350px;
         margin: 0 auto;
-        padding: 82px 15px;
-        
-        @media (max-width:1366px) {
-            padding: 50px 15px;
+        gap: 20px;
+      }
+      li {
+        background: #fffefc;
+        border: 3px solid #edebe7;
+        border-radius: 15px;
+        max-width: 184px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 185px;
+        height: 100%;
+        @media (max-width: 767px) {
+          min-height: 150px;
         }
-
-        ul {
-            gap: 30px;
-            flex-wrap: wrap;
-            li {
-                background: #FFFEFC;
-                border: 3px solid #EDEBE7;
-                border-radius: 15px;
-                max-width: 184px;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                min-height: 185px;
-                height: 100%;
-                span {
-                    font-family: 'Inter';
-                    font-weight: 600;
-                    font-size: 15px;
-                    line-height: 55px;
-                    letter-spacing: 0.184221px;
-                    text-transform: capitalize;
-                    color: #000000;
-                }
-            }
+        span {
+          font-family: "Inter";
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 55px;
+          letter-spacing: 0.184221px;
+          text-transform: capitalize;
+          color: #000000;
         }
+      }
     }
+  }
 }
