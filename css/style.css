@@ -741,6 +741,11 @@ header .right-side .flags-dropdown {
   cursor: pointer;
   position: relative;
 }
+@media only screen and (max-width: 991px) {
+  header .right-side .flags-dropdown {
+    margin-right: 10px;
+  }
+}
 @media (max-width: 991px) {
   header .right-side .flags-dropdown .flag img {
     width: 28px;
@@ -759,6 +764,9 @@ header .right-side .flags-dropdown .flags-options {
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.29);
   padding: 10px;
   margin-top: 10px;
+}
+header .right-side .add-to-cart {
+  display: none;
 }
 @media (max-width: 991px) {
   header .right-side .add-to-cart img {
@@ -796,7 +804,7 @@ header .menu-btn.change .bar3 {
 
 .mobile-btn {
   width: 100%;
-  border-bottom: 1px solid #000;
+  border-bottom: 0.5px solid #c2c2c2;
   padding-bottom: 18px;
 }
 .mobile-btn a {

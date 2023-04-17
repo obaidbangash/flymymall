@@ -150,6 +150,9 @@ header {
       gap: 7px;
       cursor: pointer;
       position: relative;
+      @media only screen and (max-width: 991px) {
+        margin-right: 10px;
+      }
       .flag {
         img {
           @media (max-width: 991px) {
@@ -175,6 +178,7 @@ header {
       }
     }
     .add-to-cart {
+      display: none;
       img {
         @media (max-width: 991px) {
           height: 30px;
@@ -213,7 +217,7 @@ header {
 }
 .mobile-btn {
   width: 100%;
-  border-bottom: 1px solid #000;
+  border-bottom: 0.5px solid #c2c2c2;
   padding-bottom: 18px;
   a {
     padding: 8px 27px;
