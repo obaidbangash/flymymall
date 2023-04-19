@@ -1417,7 +1417,113 @@ header .menu-btn.change .bar3 {
 }
 
 .map-wrapper {
-  padding: 122px 0 0;
+  padding: 120px 0;
+}
+.map-wrapper .map-status-wrapper {
+  display: flex;
+  position: relative;
+  max-width: 1078px;
+  margin: 0 auto;
+}
+.map-wrapper .map-status-wrapper .status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 120px;
+  min-width: 120px;
+  text-align: center;
+}
+.map-wrapper .map-status-wrapper .status span {
+  display: block;
+  margin-top: 5px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.184221px;
+  text-transform: capitalize;
+  color: #000000;
+}
+@media only screen and (max-width: 767px) {
+  .map-wrapper .map-status-wrapper .status {
+    max-width: 60px;
+    min-width: 60px;
+  }
+  .map-wrapper .map-status-wrapper .status span {
+    font-size: 9px;
+    line-height: 15px;
+  }
+}
+.map-wrapper .map-status-wrapper .status.ware-house {
+  top: -2px;
+}
+@media only screen and (max-width: 767px) {
+  .map-wrapper .map-status-wrapper .status.ware-house {
+    top: 3px;
+  }
+}
+.map-wrapper .map-status-wrapper .status.departed {
+  left: calc(33.33% - 46px);
+}
+@media only screen and (max-width: 767px) {
+  .map-wrapper .map-status-wrapper .status.departed {
+    left: 33.33%;
+    top: 5px;
+  }
+}
+.map-wrapper .map-status-wrapper .status.customs {
+  left: 66%;
+  top: 7px;
+}
+@media only screen and (max-width: 767px) {
+  .map-wrapper .map-status-wrapper .status.customs {
+    left: calc(66% - 5px);
+    top: 18px;
+  }
+}
+.map-wrapper .map-status-wrapper .status.pick-up {
+  left: 100%;
+  top: 7px;
+}
+@media only screen and (max-width: 767px) {
+  .map-wrapper .map-status-wrapper .status.pick-up {
+    top: 10px;
+  }
+}
+.map-wrapper .map-status-wrapper .status svg {
+  width: 40px;
+}
+.map-wrapper .map-status-wrapper .status svg path {
+  fill: black;
+}
+.map-wrapper .map-status-wrapper .status.active svg {
+  width: 40px;
+}
+.map-wrapper .map-status-wrapper .status.active svg path {
+  fill: #ffbe2e;
+}
+.map-wrapper .map-status-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 100%;
+  border: 1px dashed black;
+}
+@media only screen and (max-width: 1200px) {
+  .map-wrapper {
+    width: 100%;
+    padding: 120px 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .map-wrapper {
+    padding: 80px 60px;
+  }
 }
 
 .map-inner {
@@ -1514,9 +1620,6 @@ header .menu-btn.change .bar3 {
   .map-m {
     display: block;
   }
-  .map-wrapper {
-    padding: 62px 0 0;
-  }
   .map-wrapper .map-inner {
     max-width: 670px;
   }
@@ -1584,7 +1687,7 @@ header .menu-btn.change .bar3 {
   max-width: 968px;
   margin: 0 auto;
   background: #ffffff;
-  border: 0.5px solid #DAD8D8;
+  border: 0.5px solid #dad8d8;
   border-radius: 15px;
   padding: 32px 59px;
   -ms-flex-wrap: wrap;
@@ -1628,7 +1731,7 @@ header .menu-btn.change .bar3 {
 .tracking-wrapper form .tracking-inner .left-col .form-row input {
   width: 100%;
   background: #ffffff;
-  border: 1px solid #CCC9C6;
+  border: 1px solid #ccc9c6;
   border-radius: 15px;
   margin-bottom: 9px;
   font-family: "Gill Sans MT";
@@ -1640,9 +1743,7 @@ header .menu-btn.change .bar3 {
   text-transform: capitalize;
   color: rgba(140, 133, 133, 0.83);
   padding: 16px 22px;
-}
-.tracking-wrapper form .tracking-inner .left-col .form-row input:hover {
-  border: 1px solid #000000;
+  text-align: left;
 }
 .tracking-wrapper form .tracking-inner .left-col .form-row input:focus {
   outline: none;
@@ -1699,7 +1800,7 @@ header .menu-btn.change .bar3 {
 .tracking-wrapper form .tracking-inner .right-col .form-row input {
   width: 100%;
   background: #ffffff;
-  border: 1px solid #CCC9C6;
+  border: 1px solid #ccc9c6;
   border-radius: 15px;
   margin-bottom: 9px;
   font-family: "Gill Sans MT";
@@ -1711,9 +1812,7 @@ header .menu-btn.change .bar3 {
   text-transform: capitalize;
   color: rgba(140, 133, 133, 0.83);
   padding: 16px 22px;
-}
-.tracking-wrapper form .tracking-inner .right-col .form-row input:hover {
-  border: 1px solid #000000;
+  text-align: left;
 }
 .tracking-wrapper form .tracking-inner .right-col .form-row input:focus {
   outline: none;
@@ -1739,7 +1838,7 @@ header .menu-btn.change .bar3 {
 .tracking-wrapper .hw-60 {
   width: 60%;
   height: 0px;
-  border: 1px solid #BEB7B7;
+  border: 1px solid #beb7b7;
   margin: 70px auto 27px;
 }
 .tracking-wrapper .mt-70 {

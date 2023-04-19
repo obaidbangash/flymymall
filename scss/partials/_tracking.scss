@@ -1,274 +1,275 @@
 /* Tracking css start */
 .tracking-wrapper {
-	padding: 36px 30px 0;
+  padding: 36px 30px 0;
 
-	.tracking-title {
-		font-family: "DM Sans";
-		font-style: normal;
-		font-weight: 500;
-		font-size: 35px;
-		line-height: 55px;
-		letter-spacing: 0.184221px;
-		text-transform: capitalize;
-		color: $black;
-		text-align: center;
-		margin-bottom: 50px;
-	}
+  .tracking-title {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 55px;
+    letter-spacing: 0.184221px;
+    text-transform: capitalize;
+    color: $black;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
-	form {
-		.tracking-inner {
-			max-width: 968px;
-			margin: 0 auto;
-			background: $white;
-			border: 0.5px solid #DAD8D8;
-			border-radius: 15px;
-			padding: 32px 59px;
-			-ms-flex-wrap: wrap;
-			flex-wrap: wrap;
-			-webkit-box-align: start;
-			-ms-flex-align: start;
-			align-items: flex-start;
-			margin-bottom: 92px;
+  form {
+    .tracking-inner {
+      max-width: 968px;
+      margin: 0 auto;
+      background: $white;
+      border: 0.5px solid #dad8d8;
+      border-radius: 15px;
+      padding: 32px 59px;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      margin-bottom: 92px;
 
-			.left-col {
-				width: 45%;
-				-webkit-box-flex: 0;
-				-ms-flex: 0 0 45%;
-				flex: 0 0 45%;
-				width: 100%;
+      .left-col {
+        width: 45%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 45%;
+        flex: 0 0 45%;
+        width: 100%;
 
-				.tracking-detail-title {
-					font-family: "DM Sans";
-					font-style: normal;
-					font-weight: 400;
-					font-size: 18px;
-					line-height: 55px;
-					letter-spacing: 0.184221px;
-					text-transform: capitalize;
-					color: $title_gray;
-				}
+        .tracking-detail-title {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 55px;
+          letter-spacing: 0.184221px;
+          text-transform: capitalize;
+          color: $title_gray;
+        }
 
-				.form-row {
-					width: 100%;
+        .form-row {
+          width: 100%;
 
-					label {
-						font-family: "DM Sans";
-						font-style: normal;
-						font-weight: 500;
-						font-size: 20px;
-						line-height: 55px;
-						letter-spacing: 0.184221px;
-						text-transform: capitalize;
-						color: $black;
-						width: 100%;
-					}
+          label {
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 55px;
+            letter-spacing: 0.184221px;
+            text-transform: capitalize;
+            color: $black;
+            width: 100%;
+          }
 
-					input {
-						width: 100%;
-						background: $white;
-						border: 1px solid #CCC9C6;
-						border-radius: 15px;
-						margin-bottom: 9px;
-						font-family: "Gill Sans MT";
-						font-style: normal;
-						font-weight: 400;
-						font-size: 20px;
-						line-height: 26px;
-						letter-spacing: 0.184221px;
-						text-transform: capitalize;
-						color: rgba(140, 133, 133, 0.83);
-						padding: 16px 22px;
+          input {
+            width: 100%;
+            background: $white;
+            border: 1px solid #ccc9c6;
+            border-radius: 15px;
+            margin-bottom: 9px;
+            font-family: "Gill Sans MT";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0.184221px;
+            text-transform: capitalize;
+            color: rgba(140, 133, 133, 0.83);
+            padding: 16px 22px;
+            text-align: left;
 
-						&:hover {
-							border: 1px solid #000000;
-						}
+            // &:hover {
+            //   border: 1px solid #000000;
+            // }
 
-						&:focus {
-							outline: none;
-						}
+            &:focus {
+              outline: none;
+            }
 
-						&::-webkit-input-placeholder {
-							color: rgba(140, 133, 133, 0.83);
-						}
+            &::-webkit-input-placeholder {
+              color: rgba(140, 133, 133, 0.83);
+            }
 
-						&::-moz-placeholder {
-							color: rgba(140, 133, 133, 0.83);
-						}
+            &::-moz-placeholder {
+              color: rgba(140, 133, 133, 0.83);
+            }
 
-						&:-ms-input-placeholder {
-							color: rgba(140, 133, 133, 0.83);
-						}
+            &:-ms-input-placeholder {
+              color: rgba(140, 133, 133, 0.83);
+            }
 
-						&::-ms-input-placeholder {
-							color: rgba(140, 133, 133, 0.83);
-						}
+            &::-ms-input-placeholder {
+              color: rgba(140, 133, 133, 0.83);
+            }
 
-						&::placeholder {
-							color: rgba(140, 133, 133, 0.83);
-						}
-					}
-				}
+            &::placeholder {
+              color: rgba(140, 133, 133, 0.83);
+            }
+          }
+        }
 
-				.r-80 {
-					width: 74%;
-				}
-			}
+        .r-80 {
+          width: 74%;
+        }
+      }
 
-			.right-col {
-				width: 45%;
-				-webkit-box-flex: 0;
-				-ms-flex: 0 0 45%;
-				flex: 0 0 45%;
-				width: 100%;
+      .right-col {
+        width: 45%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 45%;
+        flex: 0 0 45%;
+        width: 100%;
 
-				.tracking-detail-title {
-					font-family: "DM Sans";
-					font-style: normal;
-					font-weight: 400;
-					font-size: 18px;
-					line-height: 55px;
-					letter-spacing: 0.184221px;
-					text-transform: capitalize;
-					color: $title_gray;
-				}
+        .tracking-detail-title {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 55px;
+          letter-spacing: 0.184221px;
+          text-transform: capitalize;
+          color: $title_gray;
+        }
 
-				.form-row {
-					width: 100%;
+        .form-row {
+          width: 100%;
 
-					label {
-						font-family: "DM Sans";
-						font-style: normal;
-						font-weight: 500;
-						font-size: 20px;
-						line-height: 55px;
-						letter-spacing: 0.184221px;
-						text-transform: capitalize;
-						color: $black;
-						width: 100%;
-					}
+          label {
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 55px;
+            letter-spacing: 0.184221px;
+            text-transform: capitalize;
+            color: $black;
+            width: 100%;
+          }
 
-					input {
-						width: 100%;
-						background: $white;
-						border: 1px solid #CCC9C6;
-						border-radius: 15px;
-						margin-bottom: 9px;
-						font-family: "Gill Sans MT";
-						font-style: normal;
-						font-weight: 400;
-						font-size: 20px;
-						line-height: 26px;
-						letter-spacing: 0.184221px;
-						text-transform: capitalize;
-						color: rgba(140, 133, 133, 0.83);
-						padding: 16px 22px;
+          input {
+            width: 100%;
+            background: $white;
+            border: 1px solid #ccc9c6;
+            border-radius: 15px;
+            margin-bottom: 9px;
+            font-family: "Gill Sans MT";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0.184221px;
+            text-transform: capitalize;
+            color: rgba(140, 133, 133, 0.83);
+            padding: 16px 22px;
+            text-align: left;
 
-						&:hover {
-							border: 1px solid #000000;
-						}
+            // &:hover {
+            //   border: 1px solid #000000;
+            // }
 
-						&:focus {
-							outline: none;
-						}
+            &:focus {
+              outline: none;
+            }
 
-						&::-webkit-input-placeholder {
-							color: rgba(140, 133, 133, 0.83);
-						}
+            &::-webkit-input-placeholder {
+              color: rgba(140, 133, 133, 0.83);
+            }
 
-						&::-moz-placeholder {
-							color: rgba(140, 133, 133, 0.83);
-						}
+            &::-moz-placeholder {
+              color: rgba(140, 133, 133, 0.83);
+            }
 
-						&:-ms-input-placeholder {
-							color: rgba(140, 133, 133, 0.83);
-						}
+            &:-ms-input-placeholder {
+              color: rgba(140, 133, 133, 0.83);
+            }
 
-						&::-ms-input-placeholder {
-							color: rgba(140, 133, 133, 0.83);
-						}
+            &::-ms-input-placeholder {
+              color: rgba(140, 133, 133, 0.83);
+            }
 
-						&::placeholder {
-							color: rgba(140, 133, 133, 0.83);
-						}
-					}
-				}
+            &::placeholder {
+              color: rgba(140, 133, 133, 0.83);
+            }
+          }
+        }
 
-				.r-80 {
-					width: 74%;
-				}
-			}
-		}
-	}
+        .r-80 {
+          width: 74%;
+        }
+      }
+    }
+  }
 
-	.hw-60 {
-		width: 60%;
-		height: 0px;
-		border: 1px solid #BEB7B7;
-		margin: 70px auto 27px;
-	}
+  .hw-60 {
+    width: 60%;
+    height: 0px;
+    border: 1px solid #beb7b7;
+    margin: 70px auto 27px;
+  }
 
-	.mt-70 {
-		margin-top: 70px;
-	}
+  .mt-70 {
+    margin-top: 70px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
-	.tracking-wrapper {
-		form {
-			.tracking-inner {
-				padding: 32px 30px;
+  .tracking-wrapper {
+    form {
+      .tracking-inner {
+        padding: 32px 30px;
 
-				.hw-60 {
-					margin: 30px auto 27px;
-				}
+        .hw-60 {
+          margin: 30px auto 27px;
+        }
 
-				.right-col,
-				.left-col {
-					.form-row {
-						label {
-							font-size: 20px;
-							line-height: 36px;
-						}
+        .right-col,
+        .left-col {
+          .form-row {
+            label {
+              font-size: 20px;
+              line-height: 36px;
+            }
 
-						input {
-							font-size: 20px;
-							line-height: 26px;
-							padding: 12px 20px;
-						}
-					}
-				}
-			}
-		}
-	}
+            input {
+              font-size: 20px;
+              line-height: 26px;
+              padding: 12px 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 640px) {
-	.tracking-wrapper {
-		.tracking-title {
-			font-size: 26px;
-			line-height: 35px;
-			margin-bottom: 30px;
-		}
+  .tracking-wrapper {
+    .tracking-title {
+      font-size: 26px;
+      line-height: 35px;
+      margin-bottom: 30px;
+    }
 
-		form {
-			.tracking-inner {
+    form {
+      .tracking-inner {
+        .right-col,
+        .left-col {
+          width: 100%;
+          flex: 0 0 100%;
 
-				.right-col,
-				.left-col {
-					width: 100%;
-					flex: 0 0 100%;
+          .form-row {
+            label {
+              font-size: 17px;
+            }
+          }
 
-					.form-row {
-						label {
-							font-size: 17px;
-						}
-					}
-
-					.r-80 {
-						width: 100%;
-					}
-				}
-			}
-		}
-	}
+          .r-80 {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
